@@ -5,6 +5,8 @@ import CardsView from '../CardsView/CardsView';
 import IconSwitch from '../IconSwitch/IconSwitch';
 import ListView from '../ListView/ListView';
 
+import './Store.css';
+
 const VIEWS = ['view_module', 'view_list'];
 const DEFAULT_VIEW_INDEX = 0;
 
@@ -17,7 +19,9 @@ export default function Store({ products }) {
 
   return (
     <div className="Store">
-      <IconSwitch icon={view} onSwitch={onToggleView}/>
+      <div class="Store-Switch">
+        <IconSwitch icon={view} onSwitch={onToggleView}/>
+      </div>
       {view === VIEWS[0] ? <CardsView items={products}/> : <ListView items={products}/>}
     </div>
   );
