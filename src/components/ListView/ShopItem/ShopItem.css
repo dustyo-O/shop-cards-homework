@@ -1,0 +1,32 @@
+.ListView-ShopItemCell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100px;
+
+  border: none;
+
+  background-color: var(--color-content-background);
+}
+
+.ListView-ShopItemImage {
+  height: 100px;
+}
+
+.ListView-ShopItemImageCell {
+  justify-content: flex-start;
+}
+
+.ListView-ShopItemAdd {
+  justify-content: flex-end;
+}
+
+.ListView-ShopItemName {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.ListView-ShopItemPrice {
+  color: var(--color-highlight);
+}

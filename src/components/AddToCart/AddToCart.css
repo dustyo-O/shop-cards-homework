@@ -1,0 +1,15 @@
+.AddToCart {
+  padding: 10px 15px;
+
+  outline: none;
+  border: 1px solid var(--color-highlight);
+  border-radius: 35px;
+
+  font-weight: 700;
+  color: var(--color-highlight);
+  text-transform: uppercase;
+
+  box-shadow: none;
+
+  background-color: transparent;
+}
