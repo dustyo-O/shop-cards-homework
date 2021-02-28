@@ -7,7 +7,7 @@ import './CardsView.css';
 export default function CardsView({ items }) {
   return (
     <div className="CardsView">
-      {items.map(item => (<CardsViewShopCard {...item} />))}
+      {items.map((item, index) => (<CardsViewShopCard key={index} {...item} />))}
     </div>
   );
 }

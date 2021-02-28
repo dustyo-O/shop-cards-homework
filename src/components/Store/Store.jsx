@@ -1,5 +1,6 @@
 import { PropTypes } from 'prop-types';
 import { useState } from 'react';
+import { VIEW_LIST, VIEW_MODULE } from '../../constants';
 
 import CardsView from '../CardsView/CardsView';
 import IconSwitch from '../IconSwitch/IconSwitch';
@@ -7,7 +8,7 @@ import ListView from '../ListView/ListView';
 
 import './Store.css';
 
-const VIEWS = ['view_module', 'view_list'];
+const VIEWS = [VIEW_MODULE, VIEW_LIST];
 const DEFAULT_VIEW_INDEX = 0;
 
 export default function Store({ products }) {
